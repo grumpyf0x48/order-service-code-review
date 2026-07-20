@@ -82,7 +82,7 @@ class OrderControllerTest {
         mockMvc.perform(post("/orders")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(order)))
-                .andExpect(status().isOk()); // ← est-ce le bon comportement attendu ?
+                .andExpect(status().isOk());
     }
 
     @Test
